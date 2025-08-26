@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dra. Elda Moreno Núñez - Portafolio</title>
+  <title>Dra. Elda Moreno Núñez - Portafolio Académico</title>
   <style>
-    /* ====== ESTILOS GENERALES ====== */
     * {
       margin: 0;
       padding: 0;
@@ -14,17 +13,21 @@
     }
 
     body {
-      background-color: #f9f9fb;
+      background: #f9f9fb;
       color: #222;
       line-height: 1.6;
     }
 
     a {
+      color: #1a237e;
       text-decoration: none;
-      color: inherit;
     }
 
-    /* ====== NAVBAR ====== */
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== NAVBAR ===== */
     header {
       background: linear-gradient(90deg, #1a237e, #4a148c);
       color: #fff;
@@ -38,7 +41,7 @@
     }
 
     header h1 {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
 
     nav ul {
@@ -50,14 +53,14 @@
     nav ul li a {
       color: #fff;
       font-weight: 500;
-      transition: color 0.3s ease;
+      transition: 0.3s;
     }
 
     nav ul li a:hover {
       color: #d1c4e9;
     }
 
-    /* ====== SECCIÓN HERO ====== */
+    /* ===== HERO ===== */
     .hero {
       background: #1a237e;
       color: white;
@@ -67,12 +70,10 @@
 
     .hero h2 {
       font-size: 2rem;
-      margin-bottom: 10px;
     }
 
     .hero p {
-      font-size: 1.2rem;
-      opacity: 0.9;
+      font-size: 1.1rem;
     }
 
     .hero img {
@@ -81,11 +82,11 @@
       height: 180px;
       border-radius: 50%;
       border: 4px solid white;
-      object-fit: cover;
       background: #ccc;
+      object-fit: cover;
     }
 
-    /* ====== CONTENIDO ====== */
+    /* ===== SECCIONES ===== */
     section {
       padding: 60px 20px;
       max-width: 1000px;
@@ -93,7 +94,7 @@
     }
 
     h3 {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       color: #4a148c;
       margin-bottom: 20px;
       border-bottom: 3px solid #1a237e;
@@ -102,57 +103,59 @@
     }
 
     ul {
-      margin-left: 20px;
-      margin-top: 10px;
+      margin: 15px 0 0 20px;
     }
 
     ul li {
       margin-bottom: 8px;
     }
 
-    /* ====== FOOTER ====== */
+    /* ===== FOOTER ===== */
     footer {
       background: linear-gradient(90deg, #1a237e, #4a148c);
-      color: #fff;
+      color: white;
       text-align: center;
       padding: 20px;
       margin-top: 40px;
     }
 
-    footer p {
-      font-size: 0.9rem;
+    footer a {
+      color: #d1c4e9;
     }
   </style>
 </head>
 <body>
-  <!-- ====== NAVBAR ====== -->
+  <!-- NAVBAR -->
   <header>
-    <h1>Portafolio</h1>
+    <h1>Portafolio Académico</h1>
     <nav>
       <ul>
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#intereses">Áreas de Interés</a></li>
-        <li><a href="#investigacion">Líneas de Investigación</a></li>
+        <li><a href="#investigacion">Investigación</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#actividades">Actividades</a></li>
+        <li><a href="#trabajos">Trabajos</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ====== HERO ====== -->
+  <!-- HERO -->
   <section class="hero" id="inicio">
     <h2>Dra. Elda Moreno Núñez</h2>
     <p>Profesor de Tiempo Completo</p>
-    <!-- ESPACIO PARA FOTO DE PERFIL -->
-    <img src="imagen-perfil.jpg" alt="Foto de Elda Moreno Núñez">
+    <img src="foto-perfil.jpg" alt="Foto de perfil">
   </section>
 
-  <!-- ====== INTERESES ====== -->
+  <!-- INTERESES -->
   <section id="intereses">
     <h3>Áreas de Interés</h3>
     <p>Desarrollo de Software, Educación, Sistemas de Información Geográfica.</p>
   </section>
 
-  <!-- ====== INVESTIGACIÓN ====== -->
+  <!-- INVESTIGACION -->
   <section id="investigacion">
     <h3>Líneas de Investigación</h3>
     <ul>
@@ -161,28 +164,69 @@
     </ul>
   </section>
 
-  <!-- ====== PERTENENCIA ====== -->
-  <section>
-    <h3>Pertenencia Académica</h3>
+  <!-- EXPERIENCIA -->
+  <section id="experiencia">
+    <h3>Experiencia Profesional</h3>
     <ul>
-      <li>SEI – COCYTED: Investigador Estatal Honorífico.</li>
-      <li>SNII – SECIHTI: Nivel Candidato.</li>
-      <li>Perfil Deseable PRODEP.</li>
-      <li>Cuerpo Académico: Ingeniería de software aplicada a soluciones.</li>
+      <li><b>División de Estudios Superiores del Instituto 18 de Marzo</b> (2018 - presente) | Docente de Posgrado</li>
+      <li><b>Tecnológico Nacional de México - Campus Lerdo</b> (2005 - presente) | Profesora Titular A</li>
+      <li><b>Comisión Nacional del Agua</b> (1996 - 2003) | Encargada de la Jefatura en SIG</li>
     </ul>
   </section>
 
-  <!-- ====== CONTACTO ====== -->
+  <!-- FORMACIÓN -->
+  <section id="formacion">
+    <h3>Formación Académica</h3>
+    <ul>
+      <li><b>Doctorado en Desarrollo Educativo</b> - Universidad Autónoma de La Laguna (2016 - 2018)</li>
+      <li><b>Maestría en Administración</b> - Universidad Autónoma de Coahuila (2002 - 2004)</li>
+      <li><b>Ingeniería en Sistemas Computacionales</b> - Instituto Tecnológico de la Laguna (1990 - 1994)</li>
+    </ul>
+  </section>
+
+  <!-- ACTIVIDADES -->
+  <section id="actividades">
+    <h3>Actividades y Distinciones</h3>
+    <ul>
+      <li><b>CONAHCYT</b> (2024 - 2027) | Candidato a Investigador Nacional</li>
+      <li><b>COCYTED</b> (2023 - 2025) | Investigador Estatal Nivel I</li>
+      <li>Asesora de proyecto ganador 1er lugar en el XXIII Concurso Nacional de Prototipos (2021)</li>
+      <li>Consolidación del Cuerpo Académico "Ingeniería de Software Aplicada a Soluciones" (2020)</li>
+      <li>Perfil Deseable PRODEP (2020)</li>
+      <li>Reconocimiento académico <b>Cum Laude</b> en Doctorado en Desarrollo Educativo (2018)</li>
+    </ul>
+  </section>
+
+  <!-- TRABAJOS -->
+  <section id="trabajos">
+    <h3>Trabajos Publicados</h3>
+    <ul>
+      <li>📄 Prototipo de aplicación móvil para el control de vacunación contra COVID en México (2023)  
+        <a href="https://doi.org/10.33262/rmc.v8i2.2870" target="_blank">DOI</a>
+      </li>
+      <li>📄 Comparative analysis of students enrolled in administrative and IT study areas in the TecNM tutoring program (2021)  
+        <a href="https://doi.org/10.35429/jhs.2021.13.5.13.19" target="_blank">DOI</a>
+      </li>
+      <li>📄 Desarrollo del sistema de gestión para laboratorios del ITSL (2021)</li>
+      <li>📄 Development of a web management system for internship process at TecNM Lerdo (2021)</li>
+      <li>📄 Ingeniería de requerimientos aplicada a un software de gestión para laboratorios (2019)</li>
+      <li>📄 Configuración e instalación de infraestructura de red y app móvil para geolocalización en ITSL (2017)</li>
+    </ul>
+  </section>
+
+  <!-- CONTACTO -->
   <section id="contacto">
     <h3>Contacto</h3>
     <p>Email: <a href="mailto:elda.mn@itslerdo.edu.mx">elda.mn@itslerdo.edu.mx</a></p>
-    <!-- ESPACIO PARA IMAGEN DE BANNER O DECORATIVA -->
-    <img src="banner.jpg" alt="Imagen relacionada" style="width:100%; max-height:300px; object-fit:cover; margin-top:20px; background:#ccc;">
+    <p>ORCID: 
+      <a href="https://orcid.org/0000-0002-5912-082X" target="_blank">0000-0002-5912-082X</a>
+    </p>
+    <img src="banner.jpg" alt="Banner decorativo" style="width:100%; max-height:300px; object-fit:cover; margin-top:20px; background:#ccc;">
   </section>
 
-  <!-- ====== FOOTER ====== -->
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Dra. Elda Moreno Núñez | Portafolio Académico</p>
+    <p>&copy; 2025 Dra. Elda Moreno Núñez | Portafolio Académico | <a href="https://orcid.org/0000-0002-5912-082X" target="_blank">ORCID</a></p>
   </footer>
 </body>
 </html>
