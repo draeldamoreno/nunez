@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Elda Moreno Núñez - Portafolio</title>
+  <style>
+    /* ====== ESTILOS GENERALES ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ====== NAVBAR ====== */
+    header {
+      background: linear-gradient(90deg, #1a237e, #4a148c);
+      color: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.4rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #d1c4e9;
+    }
+
+    /* ====== SECCIÓN HERO ====== */
+    .hero {
+      background: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .hero img {
+      margin-top: 20px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      background: #ccc;
+    }
+
+    /* ====== CONTENIDO ====== */
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      color: #4a148c;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #1a237e;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      background: linear-gradient(90deg, #1a237e, #4a148c);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- ====== NAVBAR ====== -->
+  <header>
+    <h1>Portafolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#intereses">Áreas de Interés</a></li>
+        <li><a href="#investigacion">Líneas de Investigación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="inicio">
+    <h2>Dra. Elda Moreno Núñez</h2>
+    <p>Profesor de Tiempo Completo</p>
+    <!-- ESPACIO PARA FOTO DE PERFIL -->
+    <img src="imagen-perfil.jpg" alt="Foto de Elda Moreno Núñez">
+  </section>
+
+  <!-- ====== INTERESES ====== -->
+  <section id="intereses">
+    <h3>Áreas de Interés</h3>
+    <p>Desarrollo de Software, Educación, Sistemas de Información Geográfica.</p>
+  </section>
+
+  <!-- ====== INVESTIGACIÓN ====== -->
+  <section id="investigacion">
+    <h3>Líneas de Investigación</h3>
+    <ul>
+      <li>Automatización, diseño o mejora en sistemas ambientales.</li>
+      <li>Diseño e implementación de dispositivos y sistemas mecatrónicos para procesos.</li>
+    </ul>
+  </section>
+
+  <!-- ====== PERTENENCIA ====== -->
+  <section>
+    <h3>Pertenencia Académica</h3>
+    <ul>
+      <li>SEI – COCYTED: Investigador Estatal Honorífico.</li>
+      <li>SNII – SECIHTI: Nivel Candidato.</li>
+      <li>Perfil Deseable PRODEP.</li>
+      <li>Cuerpo Académico: Ingeniería de software aplicada a soluciones.</li>
+    </ul>
+  </section>
+
+  <!-- ====== CONTACTO ====== -->
+  <section id="contacto">
+    <h3>Contacto</h3>
+    <p>Email: <a href="mailto:elda.mn@itslerdo.edu.mx">elda.mn@itslerdo.edu.mx</a></p>
+    <!-- ESPACIO PARA IMAGEN DE BANNER O DECORATIVA -->
+    <img src="banner.jpg" alt="Imagen relacionada" style="width:100%; max-height:300px; object-fit:cover; margin-top:20px; background:#ccc;">
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <p>&copy; 2025 Dra. Elda Moreno Núñez | Portafolio Académico</p>
+  </footer>
+</body>
+</html>
