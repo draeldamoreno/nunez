@@ -14,6 +14,27 @@ body {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: bold;
   margin: 0;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.35;
+  box-shadow: 0 0 80px 20px #040108;
+  pointer-events: none;
+}
+
+body > *:not(#video-bg) {
+  position: relative;
+  z-index: 1;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li, span, button {
@@ -348,6 +369,11 @@ footer {
 </style>
 </head>
 <body class="w3-black">
+
+<!-- Fondo de video galaxy.mp4 -->
+<video id="video-bg" autoplay loop muted playsinline>
+  <source src="galaxydos.mp4" type="video/mp4">
+</video>
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
