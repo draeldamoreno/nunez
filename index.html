@@ -1,232 +1,676 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dra. Elda Moreno Núñez - Portafolio Académico</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", Arial, sans-serif;
-    }
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  background: linear-gradient(135deg, #5f23e6 0%, #6c2ae6 60%, #3d1c6e 100%);
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
 
-    body {
-      background: #f9f9fb;
-      color: #222;
-      line-height: 1.6;
-    }
+h1, h2, h3, h4, h5, h6, p, ul, li, span, button {
+  color: #fff !important;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 
-    a {
-      color: #1a237e;
-      text-decoration: none;
-    }
+hr {
+  border: none;
+  border-top: 2px solid #fff;
+  width: 200px;
+  margin: 24px auto;
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+/* Sidebar: mejorar visualización y evitar cortes de texto */
+.w3-sidebar {
+  width: 160px !important;
+  min-width: 140px !important;
+  background: linear-gradient(135deg, #5f23e6 0%, #6c2ae6 60%, #3d1c6e 100%) !important;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+}
+.w3-sidebar .w3-bar-item {
+  color: #fff !important;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 14px 0 !important;
+  font-size: 0.85rem !important;
+  white-space: normal !important;
+  word-break: break-word !important;
+  line-height: 1.2;
+}
+.w3-sidebar .fa {
+  color: #fff !important;
+  margin-bottom: 6px;
+  font-size: 1.5em !important;
+}
+.w3-sidebar .w3-bar-item p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.95em;
+  white-space: normal !important;
+  word-break: break-word !important;
+}
+@media only screen and (max-width: 600px) {
+  .w3-sidebar {
+    display: none !important;
+  }
+}
+#main {
+  margin-left: 160px !important;
+}
 
-    /* ===== NAVBAR ===== */
-    header {
-      background: linear-gradient(90deg, #1a237e, #4a148c);
-      color: #fff;
-      padding: 15px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+.w3-bar-item p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.w3-top {
+  background: linear-gradient(135deg, #5f23e6 0%, #6c2ae6 100%);
+  border: none;
+}
 
-    header h1 {
-      font-size: 1.3rem;
-    }
+header#w3-container, header#w3-container h1, header#w3-container p {
+  background: none !important;
+  color: #fff !important;
+}
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
+header {
+  background: linear-gradient(135deg, #5f23e6 0%, #6c2ae6 100%);
+  border-radius: 32px;
+  box-shadow: none;
+  border: none;
+  padding: 48px 0 32px 0;
+  margin-bottom: 32px;
+  position: relative;
+}
 
-    nav ul li a {
-      color: #fff;
-      font-weight: 500;
-      transition: 0.3s;
-    }
+header h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 16px;
+}
 
-    nav ul li a:hover {
-      color: #d1c4e9;
-    }
+header img {
+  border-radius: 32px;
+  box-shadow: none;
+  border: 4px solid #fff;
+  margin-top: 32px;
+}
 
-    /* ===== HERO ===== */
-    .hero {
-      background: #1a237e;
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
+.w3-content, .w3-padding-64 {
+  background: none;
+  color: #fff;
+}
 
-    .hero h2 {
-      font-size: 2rem;
-    }
+.w3-row.w3-center.w3-padding-16.w3-section {
+  background: none;
+  color: #fff;
+  border-radius: 24px;
+  border: 2px solid #fff;
+}
 
-    .hero p {
-      font-size: 1.1rem;
-    }
+.w3-button, button {
+  background: linear-gradient(135deg, #5f23e6 0%, #6c2ae6 100%);
+  color: #fff !important;
+  border-radius: 24px;
+  border: 2px solid #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: none;
+  padding: 12px 32px;
+  margin-top: 16px;
+  transition: background 0.3s;
+}
+.w3-button:hover, button:hover {
+  background: #3d1c6e;
+  color: #fff !important;
+}
 
-    .hero img {
-      margin-top: 20px;
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      border: 4px solid white;
-      background: #ccc;
-      object-fit: cover;
-    }
+.w3-modal-content {
+  background: linear-gradient(135deg, #5f23e6 0%, #6c2ae6 100%);
+  color: #fff;
+  border-radius: 24px;
+  border: 2px solid #fff;
+  box-shadow: none;
+}
 
-    /* ===== SECCIONES ===== */
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+.w3-container.w3-black, .w3-dark-grey {
+  background: none !important;
+  color: #fff !important;
+}
 
-    h3 {
-      font-size: 1.5rem;
-      color: #4a148c;
-      margin-bottom: 20px;
-      border-bottom: 3px solid #1a237e;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
+.w3-white, .w3-light-grey {
+  background: none !important;
+  color: #fff !important;
+  border: none !important;
+}
 
-    ul {
-      margin: 15px 0 0 20px;
-    }
+.w3-modal .w3-container.w3-text-black {
+  color: #fff !important;
+}
 
-    ul li {
-      margin-bottom: 8px;
-    }
+footer {
+  background: none;
+  color: #fff;
+  border-top: 2px solid #fff;
+  margin-top: 48px;
+  padding-top: 32px;
+  text-align: center;
+}
 
-    /* ===== FOOTER ===== */
-    footer {
-      background: linear-gradient(90deg, #1a237e, #4a148c);
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
+/* Líneas minimalistas en esquinas como la imagen */
+.header-lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.header-line {
+  position: absolute;
+  height: 2px;
+  background: #fff;
+}
+.header-line.top {
+  top: 32px;
+  left: 0;
+  width: 40%;
+}
+.header-line.bottom {
+  bottom: 32px;
+  right: 0;
+  width: 40%;
+}
+.header-dots {
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+  display: flex;
+  gap: 16px;
+}
+.header-dot {
+  width: 16px;
+  height: 16px;
+  background: #eaeaea;
+  border-radius: 50%;
+}
 
-    footer a {
-      color: #d1c4e9;
-    }
-  </style>
+/* Eliminar cualquier sombra, borde o fondo que no sea violeta */
+.w3-card-4, .w3-animate-top {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Responsive font size for mobile */
+@media only screen and (max-width: 600px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Navbar on small screens: reducir altura y tamaño de fuente */
+.w3-top .w3-bar {
+  height: 40px;
+  min-height: 40px;
+  font-size: 0.95rem;
+}
+.w3-top .w3-bar-item {
+  padding: 8px 0 !important;
+  font-size: 0.95rem !important;
+}
+
+/* Navbar on small screens: aumentar altura y tamaño de fuente, quitar fondo y bordes de botones */
+.w3-top .w3-bar {
+  height: 56px;
+  min-height: 56px;
+  font-size: 1.15rem;
+  background: transparent !important;
+}
+.w3-top .w3-bar-item {
+  padding: 18px 0 !important;
+  font-size: 1.15rem !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #fff !important;
+}
+.w3-top .w3-bar-item:hover,
+.w3-top .w3-bar-item:focus {
+  background: transparent !important;
+  color: #fff !important;
+}
+
+/* Quitar bordes y fondo de los botones en la sidebar también */
+.w3-sidebar .w3-bar-item {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Ajuste de imágenes en la sección PROYECTOS para tamaño uniforme */
+#proyectos img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 8px;
+}
+/* Ajuste de imágenes en la sección PUBLICACIONES para tamaño uniforme */
+#photos img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 8px;
+}
+</style>
 </head>
-<body>
-  <!-- NAVBAR -->
-  <header>
-    <h1>Portafolio Académico</h1>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#intereses">Áreas de Interés</a></li>
-        <li><a href="#investigacion">Investigación</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#formacion">Formación</a></li>
-        <li><a href="#actividades">Actividades</a></li>
-        <li><a href="#trabajos">Trabajos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>INICIO</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ACERCA:</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PUBLICACIONES:</p>
+  </a>
+  <a href="#proyectos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-lightbulb-o w3-xxlarge"></i>
+    <p>PROYECTOS:</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACTO:</p>
+  </a>
+  
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">INICIO</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ACERCA:</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PUBLICACIONES:</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACTO:</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    
+    
+    <img src="Dra..png" alt="Foto Dra. Elda" class="w3-image" width="992" height="1108">
+    <p>Profesora - Investigadora</p>
+    <p>Tecnológico Nacional de México</p>
+    <div class="header-lines">
+      <div class="header-line top"></div>
+      <div class="header-line bottom"></div>
+      <div class="header-dots">
+        <div class="header-dot"></div>
+        <div class="header-dot"></div>
+        <div class="header-dot"></div>
+      </div>
+    </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" id="inicio">
-    <h2>Dra. Elda Moreno Núñez</h2>
-    <p>Profesor de Tiempo Completo</p>
-    <img src="foto-perfil.jpg" alt="Foto de perfil">
-  </section>
-
-  <!-- INTERESES -->
-  <section id="intereses">
-    <h3>Áreas de Interés</h3>
-    <p>Desarrollo de Software, Educación, Sistemas de Información Geográfica.</p>
-  </section>
-
-  <!-- INVESTIGACION -->
-  <section id="investigacion">
-    <h3>Líneas de Investigación</h3>
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">ACERCA DE MI:</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Líneas de Investigación:</p>
     <ul>
-      <li>Automatización, diseño o mejora en sistemas ambientales.</li>
-      <li>Diseño e implementación de dispositivos y sistemas mecatrónicos para procesos.</li>
+      <li>Ingeniería de Software</li>
+      <li>Educación.</li>
     </ul>
-  </section>
+    <h3 class="w3-padding-16 w3-text-light-grey">EXPERIENCIA DOCENTE Y PROFESIONAL:</h3>
+    <p class="w3-wide">Profesora de Licenciatura en el Instituto Tecnológico Superior de Lerdo y en posgrado en la División de Estudios Superiores de la Universidad “18 de marzo”.</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+    </div>
+    <p class="w3-wide">Comisión Nacional del Agua, Gerencia Regional Cuencas Centrales del Norte, como Especialista en Hidráulica (Torreón, Coah.). Asesora especialista en Sistemas de Cómputo en la Asociación Civil Garo Laguna, A.C. (Gómez Palacio Dgo).</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+    </div>
+    <p class="w3-wide">25 proyectos de investigación, desarrollo tecnológico e innovación (I+D+i) tanto internos -en el Instituto Tecnológico Superior de Lerdo. <br> <br>
+        Vinculados con organismos externos públicos y privados, proyectos con financiamiento del CONAHCYT (hoy SECIHTI) y del Tecnológico Nacional de México.  </p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">10+</span><br>
+        Conocimientos
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">10+</span><br>
+        Logros
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">10+</span><br>
+        Productividad
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">10+</span><br>
+        Distinciones
+      </div>
+    </div>
 
-  <!-- EXPERIENCIA -->
-  <section id="experiencia">
-    <h3>Experiencia Profesional</h3>
-    <ul>
-      <li><b>División de Estudios Superiores del Instituto 18 de Marzo</b> (2018 - presente) | Docente de Posgrado</li>
-      <li><b>Tecnológico Nacional de México - Campus Lerdo</b> (2005 - presente) | Profesora Titular A</li>
-      <li><b>Comisión Nacional del Agua</b> (1996 - 2003) | Encargada de la Jefatura en SIG</li>
-    </ul>
-  </section>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section" onclick="window.location.href='CV_EldaMoreno.pdf'" download="CV_EldaMoreno">
+      <i class="fa fa-download"></i> Descargar Curriculum
+    </button>
+    
+    
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">VINCULACION:</h3>  
+    <img src="CONFERENCIA.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Miembro del Cuerpo Académico en Consolidación "Ingeniería de Software aplicada a Soluciones"</span>- Programa para el Desarrollo Profesional Docente para el Tipo Superior (PRODEP)</p>
+    <p></p><br>
+    
+    <img src="JURADO  XXIV FESTIVAL DGTI(2).jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Integrante de los Comités Editorial y Revisor de la Revista Digital Universitaria “Ciencia, Ingeniería y Desarrollo Tec Lerdo” 
+    </span>Integrante de la Red Académica de Innovación en Alimentos y Agricultura Sustentable (RAIAAS) 
+  </p>
+    
+  <!-- End About Section -->
+  </div>
+  
 
-  <!-- FORMACIÓN -->
-  <section id="formacion">
-    <h3>Formación Académica</h3>
-    <ul>
-      <li><b>Doctorado en Desarrollo Educativo</b> - Universidad Autónoma de La Laguna (2016 - 2018)</li>
-      <li><b>Maestría en Administración</b> - Universidad Autónoma de Coahuila (2002 - 2004)</li>
-      <li><b>Ingeniería en Sistemas Computacionales</b> - Instituto Tecnológico de la Laguna (1990 - 1994)</li>
-    </ul>
-  </section>
+  <div class="w3-padding-64 w3-content" id="photos">
+  <h2 class="w3-text-light-grey">PUBLICACIONES:</h2>
+  <hr style="width:200px" class="w3-opacity">
 
-  <!-- ACTIVIDADES -->
-  <section id="actividades">
-    <h3>Actividades y Distinciones</h3>
-    <ul>
-      <li><b>CONAHCYT</b> (2024 - 2027) | Candidato a Investigador Nacional</li>
-      <li><b>COCYTED</b> (2023 - 2025) | Investigador Estatal Nivel I</li>
-      <li>Asesora de proyecto ganador 1er lugar en el XXIII Concurso Nacional de Prototipos (2021)</li>
-      <li>Consolidación del Cuerpo Académico "Ingeniería de Software Aplicada a Soluciones" (2020)</li>
-      <li>Perfil Deseable PRODEP (2020)</li>
-      <li>Reconocimiento académico <b>Cum Laude</b> en Doctorado en Desarrollo Educativo (2018)</li>
-    </ul>
-  </section>
+  <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="w3-half">
+      <!-- MICONINCI APP -->
+      <img src="MICONINCI APP.avif" style="width:100%; cursor:pointer;" onclick="document.getElementById('miconinciModal').style.display='block'">
+      <p><b>MICONINCI APP</b><br>
+      González Chávez Víctor Bryan, Rodríguez Lozano Karla Verónica, Moreno Núñez Elda, Flores Luévanos María Guadalupe, Arzola Monreal Juan Martín.<br>
+      Revista Ciencia, Tecnología y Desarrollo Tec Lerdo. ISBN: 2448-623X. Volumen 1. Número 6. Año 2020.<br>
+      </p>
+      <div id="miconinciModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container w3-black">
+            <span onclick="document.getElementById('miconinciModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h2>MICONINCI APP - Resumen Detallado</h2>
+          </header>
+          <div class="w3-container w3-text-black"> <p>
+              Artículo sobre el desarrollo de la aplicación MICONINCI APP, una herramienta innovadora para la gestión educativa.
+            </p>
+          </div>
+        </div>
+      </div>
 
-  <!-- TRABAJOS -->
-  <section id="trabajos">
-    <h3>Trabajos Publicados</h3>
-    <ul>
-      <li>📄 Prototipo de aplicación móvil para el control de vacunación contra COVID en México (2023)  
-        <a href="https://doi.org/10.33262/rmc.v8i2.2870" target="_blank">DOI</a>
-      </li>
-      <li>📄 Comparative analysis of students enrolled in administrative and IT study areas in the TecNM tutoring program (2021)  
-        <a href="https://doi.org/10.35429/jhs.2021.13.5.13.19" target="_blank">DOI</a>
-      </li>
-      <li>📄 Desarrollo del sistema de gestión para laboratorios del ITSL (2021)</li>
-      <li>📄 Development of a web management system for internship process at TecNM Lerdo (2021)</li>
-      <li>📄 Ingeniería de requerimientos aplicada a un software de gestión para laboratorios (2019)</li>
-      <li>📄 Configuración e instalación de infraestructura de red y app móvil para geolocalización en ITSL (2017)</li>
-    </ul>
-  </section>
+      <!-- Sistema Web para la Gestión de las Titulaciones de Posgrado -->
+      <img src="Sistema Web para la Gestión de las Titulaciones de Posgrado del Instituto Tecnológico Superior de Lerdo.avif" style="width:100%; cursor:pointer;" onclick="document.getElementById('gestionTitulacionesModal').style.display='block'">
+      <p><b>Sistema Web para la Gestión de las Titulaciones de Posgrado del Instituto Tecnológico Superior de Lerdo</b><br>
+      Karla Verónica Rodríguez Lozano, Elda Moreno Núñez, María Guadalupe Flores Luévanos.<br>
+      </p>
+      <div id="gestionTitulacionesModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container w3-black">
+            <span onclick="document.getElementById('gestionTitulacionesModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h2>Sistema Web Gestión Titulaciones - Resumen Detallado</h2>
+          </header>
+          <div class="w3-container w3-text-black"> <p>
+              Proyecto de sistema web para la administración y seguimiento de titulaciones de posgrado.
+            </p>
+          </div>
+        </div>
+      </div>
 
-  <!-- CONTACTO -->
-  <section id="contacto">
-    <h3>Contacto</h3>
-    <p>Email: <a href="mailto:elda.mn@itslerdo.edu.mx">elda.mn@itslerdo.edu.mx</a></p>
-    <p>ORCID: 
-      <a href="https://orcid.org/0000-0002-5912-082X" target="_blank">0000-0002-5912-082X</a>
-    </p>
-    <img src="banner.jpg" alt="Banner decorativo" style="width:100%; max-height:300px; object-fit:cover; margin-top:20px; background:#ccc;">
-  </section>
+      <!-- Sistema Web para el Control de las Actividades Complementarias -->
+      <img src="Sistema Web para el Control de las Actividades Complementarias en el TecNM Campus Lerdo.avif" style="width:100%; cursor:pointer;" onclick="document.getElementById('sistemaWebModal').style.display='block'">
+      <p><b>Sistema Web para el Control de las Actividades Complementarias en el TecNM Campus Lerdo</b><br>
+      M.A. María Guadalupe Flores Luévanos, Dra. Elda Moreno Núñez, M.A. Karla Verónica Rodríguez Lozano, Dr. Juan Martín Arzola Monreal<br>
+      </p>
+      <div id="sistemaWebModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container w3-black">
+            <span onclick="document.getElementById('sistemaWebModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h2>Sistema Web - Resumen Detallado</h2>
+          </header>
+          <div class="w3-container w3-text-black"> <p>
+              Sistema web para optimizar el control y gestión de actividades complementarias en el TecNM Campus Lerdo.
+            </p>
+          </div>
+        </div>
+      </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 Dra. Elda Moreno Núñez | Portafolio Académico | <a href="https://orcid.org/0000-0002-5912-082X" target="_blank">ORCID</a></p>
+      <!-- Evaluación de Nivel Tecnológico de un Software de Gestión de Residencias Profesionales -->
+      <img src="Evaluación de Nivel Tecnológico de un Software de Gestión de Residencias Profesionales, Basado en el Modelo de Madurez KTH.avif" style="width:100%; cursor:pointer;" onclick="document.getElementById('evaluacionNivelModal').style.display='block'">
+      <p><b>Evaluación de Nivel Tecnológico de un Software de Gestión de Residencias Profesionales, Basado en el Modelo de Madurez KTH</b><br>
+      Elda Moreno Núñez, María Guadalupe Flores Luévanos, Karla Verónica Rodríguez Lozano.<br>
+      </p>
+      <div id="evaluacionNivelModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container w3-black">
+            <span onclick="document.getElementById('evaluacionNivelModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h2>Evaluación de Nivel Tecnológico - Resumen Detallado</h2>
+          </header>
+          <div class="w3-container w3-text-black"> <p>
+              Evaluación tecnológica de software de gestión de residencias profesionales usando el modelo KTH.
+            </p>
+          </div>
+        </div>
+      </div>
+<br>
+      <!-- Proyecto de emprendimiento con el modelo Push-Pull para el software SIGEPRORE -->
+      <img src="Proyecto de emprendimiento con el modelo Push-Pull para el software SIGEPRORE del Tecnologico Nacional de Mexico, campus Lerdo.avif" style="width:100%; cursor:pointer;" onclick="document.getElementById('pushPullModal').style.display='block'">
+      <p><b>Proyecto de emprendimiento con el modelo Push-Pull para el software SIGEPRORE del Tecnologico Nacional de Mexico, campus Lerdo</b><br>
+      K.V. Rodríguez-Lozano, J.M. Arzola -Monreal, E. Moreno-Núñez , M.G. Flores-Luévanos.<br>
+      </p>
+      <div id="pushPullModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container w3-black">
+            <span onclick="document.getElementById('pushPullModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h2>Proyecto Push-Pull - Resumen Detallado</h2>
+          </header>
+          <div class="w3-container w3-text-black"> <p>
+              Proyecto de emprendimiento para el software SIGEPRORE bajo el modelo Push-Pull.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="w3-half">
+      <!-- Comparative analysis of students enrolled in administrative and IT study areas -->
+      <img src="Comparative analysis of students enrolled in administrative and IT study areas in the TecNM tutoring program in the Comarca Lagunera.avif" style="width:100%; cursor:pointer;" onclick="document.getElementById('comparativeAnalysisModal').style.display='block'">
+      <p><b>Comparative analysis of students enrolled in administrative and IT study areas in the TecNM tutoring program in the Comarca Lagunera</b><br>
+      MORENO-NÚÑEZ, Elda, ARZOLA-MONREAL, Juan Martín, FLORES-LUÉVANOS, María<br>
+      </p>
+      <div id="comparativeAnalysisModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container w3-black">
+            <span onclick="document.getElementById('comparativeAnalysisModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h2>Comparative Analysis - Detailed Summary</h2>
+          </header>
+          <div class="w3-container w3-text-black"> <p>
+              Análisis comparativo de estudiantes en áreas administrativas y de TI en el programa de tutorías TecNM.
+            </p>
+          </div>
+        </div>
+      </div>
+<br>
+      <!-- Desarrollo de una aplicación móvil para el seguimiento de los eventos de un congreso -->
+      <img src="Desarrollo de una aplicación móvil para el seguimiento de los eventos de un congreso.avif" style="width:100%; cursor:pointer;" onclick="document.getElementById('desarrolloCongresoModal').style.display='block'">
+      <p><b>Desarrollo de una aplicación móvil para el seguimiento de los eventos de un congreso</b><br>
+      M.G. Flores-Luévanos, E. Moreno-Núñez, K.V. Rodríguez-Lozano.<br>
+      </p>
+      <div id="desarrolloCongresoModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container w3-black">
+            <span onclick="document.getElementById('desarrolloCongresoModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h2>Desarrollo de App Congreso - Resumen Detallado</h2>
+          </header>
+          <div class="w3-container w3-text-black"> <p>
+              Aplicación móvil para el seguimiento de eventos de un congreso académico.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ingeniería de requerimientos aplicada a un software de gestión -->
+      <img src="Ingeniería de requerimientos aplicada a un software de gestión.avif" style="width:100%; cursor:pointer;" onclick="document.getElementById('ingenieriaRequerimientosModal').style.display='block'">
+      <p><b>Ingeniería de requerimientos aplicada a un software de gestión</b><br>
+      E. Moreno-Núñez, M.G. Flores-Luévanos, K.V. Rodríguez-Lozano, J.M-Arzola-Monreal.<br>
+      </p>
+      <div id="ingenieriaRequerimientosModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container w3-black">
+            <span onclick="document.getElementById('ingenieriaRequerimientosModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h2>Ingeniería de Requerimientos - Resumen Detallado</h2>
+          </header>
+          <div class="w3-container w3-text-black"> <p>
+              Aplicación de ingeniería de requerimientos en software de gestión.
+            </p>
+          </div>
+        </div>
+      </div>
+<br>
+      <!-- Configuración e instalación de una infraestructura de red y el desarrollo de una aplicación móvil para la geolocalización -->
+      <img src="Configuración e instalación de una infraestructura de red y el desarrollo de una aplicación móvil para la geolocalización.avif" style="width:100%; cursor:pointer;" onclick="document.getElementById('infraestructuraRedModal').style.display='block'">
+      <p><b>Configuración e instalación de una infraestructura de red y el desarrollo de una aplicación móvil para la geolocalización</b><br>
+      Rodríguez-Lozano, Karla Verónica; Flores-Luévanos, María Guadalupe; Moreno-Núñez, Elda; Candelas-Saucedo, José Ángel.<br>
+      </p>
+      <div id="infraestructuraRedModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container w3-black">
+            <span onclick="document.getElementById('infraestructuraRedModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h2>Infraestructura de Red y Geolocalización - Resumen Detallado</h2>
+          </header>
+          <div class="w3-container w3-text-black"> <p>
+              Configuración de red y desarrollo de app móvil para geolocalización.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Implementación de la arquitectura Modelo Vista Controlador con el framework Razor .Net Core -->
+      <img src="Implementación de la arquitectura Modelo Vista Controlador con el framework Razor .Net Core en el sistema web de actividades Complementarias.avif" style="width:100%; cursor:pointer;" onclick="document.getElementById('arquitecturaMVCModal').style.display='block'">
+      <p><b>Implementación de la arquitectura Modelo Vista Controlador con el framework Razor .Net Core en el sistema web de actividades Complementarias</b><br>
+      M.G. Flores-Luévanos, E. Moreno-Núñez, K.V. Rodríguez-Lozano<br>
+      </p>
+      <div id="arquitecturaMVCModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container w3-black">
+            <span onclick="document.getElementById('arquitecturaMVCModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h2>Implementación de MVC con Razor .Net Core - Resumen Detallado</h2>
+          </header>
+          <div class="w3-container w3-text-black"> <p>
+              Implementación de arquitectura MVC con Razor .Net Core en sistema web.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Influencia de los rasgos de personalidad en las competencias laborales de los estudiantes tecnológicos de Lerdo, Durango, México -->
+      <img src="Influencia de los rasgos de personalidad en las competencias laborales de los estudiantes tecnológicos de Lerdo, Durango, México.jpg" style="width:100%; height:220px; object-fit:cover; border-radius:18px; margin-bottom:8px; cursor:pointer;" onclick="document.getElementById('personalidadModal').style.display='block'">
+      <p><b>Influencia de los rasgos de personalidad en las competencias laborales de los estudiantes tecnológicos de Lerdo, Durango, México</b><br>
+      Elda Moreno Núñez, Karla Verónica Rodríguez Lozano, María Guadalupe Flores Luévanos, Juan Agustín Aragón Guardado.<br>
+      Tecnológico Nacional de México.<br>
+      DOI: <a href="https://doi.org/10.23913/ride.v15i30.2429" target="_blank" style="color:#fff;text-decoration:underline;">10.23913/ride.v15i30.2429</a><br>
+      </p>
+      <div id="personalidadModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container w3-black">
+            <span onclick="document.getElementById('personalidadModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h2>Influencia de los rasgos de personalidad - Resumen Detallado</h2>
+          </header>
+          <div class="w3-container w3-text-black"> <p>
+              La personalidad es un conjunto único de pensamientos, emociones, comportamientos y predisposiciones que caracterizan a un individuo, resultado de la interacción entre la herencia biológica y las influencias del entorno. Es dinámica, lo que permite la adaptación con el tiempo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="w3-padding-64 w3-content" id="proyectos">
+  <h2 class="w3-text-light-grey">PROYECTOS:</h2>
+  <hr style="width:200px" class="w3-opacity">
+  <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="w3-half">
+      <!-- Sistema web para la gestión del procedimiento de residencia profesional -->
+      <img src="Sistema web para la gestión del procedimiento de residencia profesional del TecNM campus Lerdo. Proyecto del Tecnológico Nacional de México con Financiamiento externo..avif" style="width:100%; cursor:pointer;">
+      <p><b>Sistema web para la gestión del procedimiento de residencia profesional del TecNM campus Lerdo</b><br>
+      Plataforma para administrar y dar seguimiento al proceso de residencia profesional, con financiamiento externo.
+      </p>
+      <!-- Diseño del Sitio web de apoyo para el Centro de Investigación e Innovación para el Desarrollo Educativo -->
+      <img src="Diseño del Sitio web de apoyo para el Centro de Investigación e Innovación para el Desarrollo Educativo..avif" style="width:100%; cursor:pointer;">
+      <p><b>Diseño del Sitio web de apoyo para el Centro de Investigación e Innovación para el Desarrollo Educativo</b><br>
+      Portal web para el CIIDE, unidad José Vasconcelos, que facilita la difusión y gestión de actividades educativas.
+      </p>
+    </div>
+    <div class="w3-half">
+      <!-- Actualización de sistema SIGEPRORE 2.0 del ITSL -->
+      <img src="Actualización de sistema SIGEPRORE 2.0 del ITSL.avif" style="width:100%; cursor:pointer;">
+      <p><b>Actualización de sistema SIGEPRORE 2.0 del ITSL</b><br>
+      Modernización e implementación en la nube del sistema SIGEPRORE para la gestión académica en el ITSL.
+      </p>
+      <br>
+      <br>
+      <!-- Prototipo de un Kiosko móvil interactivo para el acceso a los laboratorios de prácticas en el ITSL -->
+      <img src="kiosko.jpeg" style="width:100%; height:220px; object-fit:cover; border-radius:18px; margin-bottom:8px; cursor:pointer;">
+      <p><b>Prototipo de un Kiosko móvil interactivo para el acceso a los laboratorios de prácticas en el ITSL</b><br>
+      Dispositivo interactivo que permite el acceso controlado y seguro a laboratorios de prácticas.
+      </p>
+    </div>
+  </div>
+</div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">CONTACTO</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Cd. Lerdo, Dgo</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: elda.mn@itslerdo.edu.mx</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: elda.mor.nu@gmail.com</p>
+    </div><br>
+    <p>Alguna duda. Mandar mensaje al correo:</p>
+
+    
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    
+  <!-- End footer -->
   </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
 </html>
